@@ -44,7 +44,7 @@ h2 em{font:italic 400 1em 'Playfair Display';color:var(--yellow);text-transform:
 .head{display:flex;gap:12px;padding:14px 18px;border-bottom:2px dashed var(--ink);align-items:center}
 .head .av{width:34px;height:34px;border-radius:50%;background:var(--yellow);border:2px solid var(--ink);display:grid;place-items:center;font:400 12px Anton;flex:none}
 .head b{font-size:13px}.head small{display:block;font-size:11px;opacity:.7}.head .d{margin-left:auto;font-size:11px;opacity:.8}
-.head a,.pol{color:var(--pink2)}
+.head a,.pol{color:var(--pink2)}.head a{font-size:11px;word-break:break-all;display:block}.head>div:nth-child(2){flex:1;min-width:0}
 .body{padding:18px 20px 22px;font:italic 500 13.5px/1.55 'Playfair Display',serif}
 .body p{margin:0 0 12px}.body b{font-weight:900;color:#7E140D}
 .subj{font:400 17px Anton;font-style:normal;letter-spacing:.01em}
@@ -70,7 +70,7 @@ s{text-decoration-color:var(--pink2);text-decoration-thickness:2px}
 #petals{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:1}
 .pt{position:absolute;top:-24px;border-radius:50% 0 50% 0;opacity:.85;animation:fall linear infinite}
 @keyframes fall{to{transform:translate(var(--dx),112vh) rotate(600deg)}}
-@media(max-width:760px){.sw{transform:scale(.8)}}
+@media(max-width:760px){.sw{display:none}.lights{top:70px}.hero{padding-top:150px;padding-bottom:50px}section{padding-left:5vw;padding-right:5vw}.mail{padding-top:135px}.head{flex-wrap:wrap;padding:12px 14px}.head .d{width:100%;margin:0 0 0 46px}.body{padding:14px 12px 18px}.card{box-shadow:5px 5px 0 var(--ink)}.skip{margin-right:56px}}
 #confetti{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:50}
 .modal{position:fixed;inset:0;background:rgba(58,10,36,.55);display:none;place-items:center;z-index:40;padding:20px}
 .modal.on{display:grid}
@@ -139,10 +139,10 @@ s{text-decoration-color:var(--pink2);text-decoration-thickness:2px}
  <div class="sd side spin" style="right:5%;top:62%;width:110px;height:110px"><svg viewBox="0 0 100 100"><use href="#fl"/></svg></div>
  <div class="sd side" style="left:4%;bottom:6%;width:130px;height:130px"><svg viewBox="0 0 100 100"><use href="#dy"/></svg></div>
  <div class="sd side" style="right:4%;bottom:5%;width:110px;height:110px"><svg viewBox="0 0 100 100"><use href="#dy"/></svg></div>
- <div class="sd sw" style="left:5%;top:0;width:44px;height:96px;--lc:#FF2E93"><svg viewBox="0 0 60 130"><use href="#ln"/></svg></div>
- <div class="sd sw" style="left:13%;top:0;width:36px;height:78px;--lc:#FF8A00;animation-delay:-1.2s"><svg viewBox="0 0 60 130"><use href="#ln"/></svg></div>
- <div class="sd sw" style="right:13%;top:0;width:36px;height:78px;--lc:#FFD60A;animation-delay:-2s"><svg viewBox="0 0 60 130"><use href="#ln"/></svg></div>
- <div class="sd sw" style="right:5%;top:0;width:44px;height:96px;--lc:#FF2E93;animation-delay:-.6s"><svg viewBox="0 0 60 130"><use href="#ln"/></svg></div>
+ <div class="sd sw" style="left:14%;top:0;width:44px;height:96px;--lc:#FF2E93"><svg viewBox="0 0 60 130"><use href="#ln"/></svg></div>
+ <div class="sd sw" style="left:20%;top:0;width:36px;height:78px;--lc:#FF8A00;animation-delay:-1.2s"><svg viewBox="0 0 60 130"><use href="#ln"/></svg></div>
+ <div class="sd sw" style="right:25%;top:0;width:36px;height:78px;--lc:#FFD60A;animation-delay:-2s"><svg viewBox="0 0 60 130"><use href="#ln"/></svg></div>
+ <div class="sd sw" style="right:19%;top:0;width:44px;height:96px;--lc:#FF2E93;animation-delay:-.6s"><svg viewBox="0 0 60 130"><use href="#ln"/></svg></div>
  <svg class="garland" id="garland2" viewBox="0 0 1200 40" preserveAspectRatio="xMidYMax slice"></svg>
  <div class="sd spin" style="left:50%;bottom:-210px;margin-left:-210px;width:420px;height:420px;z-index:0"><svg viewBox="0 0 100 100"><use href="#fl"/></svg></div>
  <div class="sd side fw" style="left:2%;top:6%;width:120px;height:120px;--lc:#FFD60A"><svg viewBox="-50 -50 100 100"><use href="#sb"/></svg></div>
